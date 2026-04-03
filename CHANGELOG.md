@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.5] - 2026-04-03
+
+### Updated
+- Version bump to 1.5
+
 ## [1.3.1] - 2026-01-08
 
 ### Fixed

@@ -10,7 +10,7 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 echo "📁 Project root: $PROJECT_ROOT"
 
 # Add version variable at the top
-VERSION="1.4"
+VERSION="1.5"
 APPIMAGE_NAME="RomM-RetroArch-Sync-v${VERSION}.AppImage"
 
 # Define paths
@@ -196,9 +196,9 @@ cat > "$APPDIR/usr/share/metainfo/com.romm.retroarch.sync.appdata.xml" << EOF
   </categories>
   
   <releases>
-    <release version="${VERSION}" date="2026-03-04">
+    <release version="${VERSION}" date="2026-04-03">
       <description>
-        <p>RomM 4.7.0 Devices API support, multi-state sync, collection sync improvements, several bugfixes.</p>
+        <p>Version 1.5 update with improvements and bugfixes.</p>
       </description>
     </release>
   </releases>
