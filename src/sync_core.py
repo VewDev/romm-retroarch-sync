@@ -3411,6 +3411,9 @@ class RetroArchInterface:
             'Nintendo 64': ['mupen64plus_next', 'parallel_n64'],
             'Nintendo DS': ['desmume', 'melonds', 'melondsds'],
             'Nintendo - Nintendo DS': ['desmume', 'melonds', 'melondsds'],
+            'Nintendo 3DS': ['azahar', 'citra'],
+            'Nintendo - Nintendo 3DS': ['azahar', 'citra'],
+            '3ds': ['azahar', 'citra'],
             'nds': ['desmume', 'melonds', 'melondsds'], 
             'Sega Saturn': ['beetle_saturn', 'kronos'],
             'Arcade': ['mame', 'fbneo', 'fbalpha'],
@@ -3751,6 +3754,7 @@ class RetroArchInterface:
 
         # Find first available suggested core
         for core in suggested_cores:
+            print(f'Suggesting core {core}')
             if core in available_cores:
                 print(f"✅ Found exact match core: {core}")
                 return core, available_cores[core]
@@ -3781,6 +3785,7 @@ class RetroArchInterface:
             'mega drive': ['genesis_plus_gx', 'blastem', 'picodrive'],
             'nintendo ds': ['desmume', 'melonds', 'melondsds'],
             'nds': ['desmume', 'melonds', 'melondsds'],
+            '3ds': ['azahar', 'citra']
         }
 
         # Try keyword matching
